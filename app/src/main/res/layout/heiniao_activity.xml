@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/user_background"
+            android:background="@drawable/ic_launcher_background" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:text="用户名称"
+                android:textColor="#151313" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="false"
+                    android:text="年度总排名" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="false"
+                    android:layout_gravity="center_horizontal"
+                    android:text="---" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="false"
+                    android:layout_gravity="center_horizontal"
+                    android:text="年度总积分" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="false"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="总里程km" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="false"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="介绍....."/>
+
+        <com.example.heiniaodemo.utils.ImageText
+            android:id="@+id/xunzhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@mipmap/ic_launcher"
+            android:text="勋章"
+            android:textColor="#151313" />
+
+        <com.example.heiniaodemo.utils.ImageText
+            android:layout_weight="0"
+            android:id="@+id/jibie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="菜鸟级"
+            android:textColor="#151313"/>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagers"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal">
+    </androidx.viewpager2.widget.ViewPager2>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qixingjilu"
+                android:src="@mipmap/ic_launcher"
+                android:text="骑行记录"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qiyouquan"
+                android:src="@mipmap/ic_launcher"
+                android:text="骑友圈"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xiaojie"
+                android:src="@mipmap/ic_launcher"
+                android:text="小结"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heidoushangcheng"
+                android:src="@mipmap/ic_launcher"
+                android:text="黑豆商城"
+                android:textColor="#151313" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tuijianluxian"
+                android:src="@mipmap/ic_launcher"
+                android:text="推荐路线"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:id="@+id/paihangbang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:text="排行榜"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/ershou"
+                android:src="@mipmap/ic_launcher"
+                android:text="二手"
+                android:textColor="#151313" />
+
+            <com.example.heiniaodemo.utils.ImageText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tongbumabiao"
+                android:src="@mipmap/ic_launcher"
+                android:text="同步码表"
+                android:textColor="#151313" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="15dip">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.heiniaodemo.utils.ImageText
+            android:id="@+id/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="首页"
+            android:textColor="#151313"
+            app:layout_constraintEnd_toStartOf="@id/chedui"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.example.heiniaodemo.utils.ImageText
+            android:id="@+id/chedui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="车队"
+            android:textColor="#151313"
+            app:layout_constraintEnd_toStartOf="@id/huodong"
+            app:layout_constraintStart_toEndOf="@id/shouye"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.example.heiniaodemo.utils.ImageText
+            android:id="@+id/huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="活动"
+            android:textColor="#151313"
+            app:layout_constraintEnd_toStartOf="@id/gengduo"
+            app:layout_constraintStart_toEndOf="@id/chedui"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.example.heiniaodemo.utils.ImageText
+            android:id="@+id/gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="更多"
+            android:textColor="#151313"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/huodong"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
